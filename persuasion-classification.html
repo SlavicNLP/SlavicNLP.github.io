@@ -51,9 +51,48 @@
     <section id="data">
       <h2>Data &amp; Resources</h2>
       <p>
-        The task builds on span-level annotated datasets from SemEval-2020 Task 11, SemEval-2021 Task 6, SemEval-2023 Task 3, and the Slavic NLP 2025 Shared Task.
-        Training, development, and test data will be released via this website
-        and/or a dedicated shared task repository.
+        This shared task is closely related to previous persuasion-technique datasets and benchmarks, but focuses on
+        sentence-level classification in the context of multilingual parliamentary debates and social media. All the
+        resources listed below are relevant because they cover persuasion techniques in similar domains and annotation
+        setups; however, the current task uses sentence-level labels and a different train/test setup.
+      </p>
+
+      <p><strong>Training data.</strong>
+        Participants may exploit a wide range of existing multilingual datasets with span-level and paragraph-level
+        annotation of persuasion techniques, which were used in recent SemEval and CLEF challenges and cover Bulgarian,
+        Polish, and Russian, among other languages. In addition, the <a href="https://iwoca2016.cs.helsinki.fi/trial_data.zip" target="_blank" rel="noopener">trial data</a>
+        from the previous SlavicNLP 2025 edition is also relevant as a starting point for this task. In particular, one may consider using resources from:
+      </p>
+
+      <ul style="padding-left: 1.5rem; margin-top: 0.5rem;">
+        <li><a href="https://github.com/aschern/semeval2020_task11?tab=readme-ov-file" target="_blank" rel="noopener">SemEval 2020 Task 11</a> described in <a href="https://aclanthology.org/2020.semeval-1.186/" target="_blank" rel="noopener">(Da San Martino et al., 2020)</a>.</li>
+        <li><a href="https://propaganda.math.unipd.it/semeval2021task6/" target="_blank" rel="noopener">SemEval 2021 Task 6</a> described in <a href="https://aclanthology.org/2021.semeval-1.7/" target="_blank" rel="noopener">(Dimitrov et al., 2021)</a>.</li>
+        <li><a href="https://propaganda.math.unipd.it/semeval2023task3/" target="_blank" rel="noopener">SemEval 2023 Task 10</a> (incl.: PL, RU) described in <a href="https://aclanthology.org/2023.semeval-1.317/" target="_blank" rel="noopener">(Piskorski et al., 2023)</a>.</li>
+        <li><a href="https://propaganda.math.unipd.it/checkthat24_persuasion/" target="_blank" rel="noopener">CLEF 2024 Task 3</a> (incl.: BG, PL, RU) described in <a href="https://ceur-ws.org/Vol-3740/paper-26.pdf" target="_blank" rel="noopener">(Piskorski et al., 2024)</a>.</li>
+        <li><a href="https://propaganda.math.unipd.it/semeval2024task4/" target="_blank" rel="noopener">SemEval 2024 Task 4</a> (incl.: BG) described in <a href="https://aclanthology.org/2024.semeval-1.275/" target="_blank" rel="noopener">(Dimitrov et al., 2024)</a>.</li>
+      </ul>
+
+      <p>
+        Accessing data from these shared tasks may require registration to the respective task platforms. The list above is
+        not exhaustive.
+      </p>
+
+      <p><strong>Data from previous SlavicNLP 2025.</strong>
+        The <a href="https://iwoca2016.cs.helsinki.fi/TRAIN_version_31_March_2025.zip" target="_blank" rel="noopener">TRAINING DATA</a>
+        in the domain of <strong>parliamentary debates</strong> in <strong>Bulgarian</strong>, <strong>Polish</strong>,
+        <strong>Slovene</strong>, and in the domain of <strong>social media</strong> in <strong>Russian</strong> is now available;
+        it contains approximately 80 documents.
+      </p>
+
+      <p>
+        In addition, one may consider exploiting the <a href="https://www.clarin.eu/parlamint" target="_blank" rel="noopener">ParlaMint</a>
+        dataset for domain adaptation, as well as the multilingual parliamentary model
+        <a href="https://huggingface.co/classla/xlm-r-parla" target="_blank" rel="noopener">XLM-R-parla</a>, pre-trained on parliamentary proceedings.
+      </p>
+
+      <p>
+        <strong>Test Data.</strong> The sentence-level test data for this task will be released in December, and the
+        evaluation setup follows the current shared-task design while focusing on sentence-level classification.
       </p>
     </section>
 
@@ -124,6 +163,17 @@
     ISBN = "978-1-959429-57-9"
 }</pre>
         </div>
+      </div>
+
+      <div style="margin-top: 1.5rem;">
+        <p><strong>Relevant shared tasks to cite:</strong></p>
+        <ul style="padding-left: 1.5rem; margin-top: 0.5rem;">
+          <li><a href="https://github.com/aschern/semeval2020_task11?tab=readme-ov-file" target="_blank" rel="noopener">SemEval 2020 Task 11</a> described in <a href="https://aclanthology.org/2020.semeval-1.186/" target="_blank" rel="noopener">(Da San Martino et al., 2020)</a>.</li>
+          <li><a href="https://propaganda.math.unipd.it/semeval2021task6/" target="_blank" rel="noopener">SemEval 2021 Task 6</a> described in <a href="https://aclanthology.org/2021.semeval-1.7/" target="_blank" rel="noopener">(Dimitrov et al., 2021)</a>.</li>
+          <li><a href="https://propaganda.math.unipd.it/semeval2023task3/" target="_blank" rel="noopener">SemEval 2023 Task 10</a> (incl.: PL, RU) described in <a href="https://aclanthology.org/2023.semeval-1.317/" target="_blank" rel="noopener">(Piskorski et al., 2023)</a>.</li>
+          <li><a href="https://propaganda.math.unipd.it/checkthat24_persuasion/" target="_blank" rel="noopener">CLEF 2024 Task 3</a> (incl.: BG, PL, RU) described in <a href="https://ceur-ws.org/Vol-3740/paper-26.pdf" target="_blank" rel="noopener">(Piskorski et al., 2024)</a>.</li>
+          <li><a href="https://propaganda.math.unipd.it/semeval2024task4/" target="_blank" rel="noopener">SemEval 2024 Task 4</a> (incl.: BG) described in <a href="https://aclanthology.org/2024.semeval-1.275/" target="_blank" rel="noopener">(Dimitrov et al., 2024)</a>.</li>
+        </ul>
       </div>
     </section>
 
